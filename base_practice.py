@@ -109,7 +109,7 @@ expected_error = "The password and confirmation password do not match."
 assert actual_error == expected_error
 time.sleep(2)
 
-# 10. Delete pass from point 7 and insert 2 same pass then push REGISTER button.
+# 10. delete pass from point 7 and insert 2 same pass then push REGISTER button.
 # check that the string "registerresult" is found in the url of the current page
 
 passw_element.clear()
