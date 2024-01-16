@@ -98,8 +98,7 @@ cu id-ul "page-footer" folosind CSS SELECTOR, sarind direct la acesta.
 Verifica ca tag-ul acestuia este un tag a
 """
 
-footer_link2 = driver.find_element(By. CSS_SELECTOR, 'div#page-footer a')
-
+footer_link2 = driver.find_element(By.CSS_SELECTOR, 'div#page-footer a')
 
 """
 7. CSS SELECTOR - identificarea primului copil (first-of-type)
@@ -117,9 +116,9 @@ Identifica primul div ce apartine de tag-ul form si verifica ca are clasa row.
 Identifica copilul ultimului div ce apartine de tag-ul form
 si verifica ca acesta are 3 clase setate.
 """
-div_elem = driver.find_element(By. CSS_SELECTOR, 'form > div:last-of-type > div')
-classes_as_str = div_elem.get_attribute('class')
-classes_list = classes_as_str.split()
+div_elem = driver.find_element(By.CSS_SELECTOR, 'form > div:last-of-type > div')
+classes_as_string = div_elem.get_attribute('class')
+classes_list = classes_as_string.split()
 assert len(classes_list) == 3
 
 
@@ -130,9 +129,8 @@ Acceseaza elementul input se apartine de al doilea copil al elementului form
 si verifica ca are id-ul setat corespunzator
 """
 
-# form > *:nth-of-type(2) input
-#form > *:nth-of-type(2) > div > input
-
+# form > *:nth-of-type(2) input           ---> var.1
+# form > *:nth-of-type(2) > div > input   ---> var.2
 
 """
 10. CSS SELECTOR - identificare frate ulterior (+)
